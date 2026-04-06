@@ -562,7 +562,7 @@ public class Server3 {
     public static void main(String args[]) throws Exception {
         // --- CHÈN WEB SERVER MINI (HIỂN THỊ LOG RA NGINX) ---
         // Đổi port web thành 8081 để tránh trùng với Server 2 (nếu test chung 1 máy)
-        HttpServer server = HttpServer.create(new InetSocketAddress(8081), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
         server.createContext("/", exchange -> {
             // Đổi màu text thành màu vàng (#ffcc00) để dễ phân biệt với Server 2
             String response = "<html><head><meta charset='UTF-8'><meta http-equiv='refresh' content='2'></head>"
