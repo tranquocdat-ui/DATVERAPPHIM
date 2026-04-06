@@ -238,8 +238,8 @@ public class ActPark extends JPanel {
             BufferedReader in  = new BufferedReader(new InputStreamReader(client.getInputStream(), "UTF-8"));
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream(), "UTF-8"));
 
-            String lamport = nextLamport();
-            SwingUtilities.invokeLater(() -> txa_info.append(">> Gửi yêu cầu tới " + host + ":" + port + " [Lamport=" + lamport + "]\n"));
+            String lamport = nextLamport(); // Vẫn giữ biến này để gửi cho Server xử lý đồng bộ
+            SwingUtilities.invokeLater(() -> txa_info.append(">> Gửi yêu cầu tới " + host + ":" + port + "\n"));
 
             String fullMsg = "@$0|00000|" + lamport + "|Client|Send|1|123$$" + getMessage() + "$@";
             out.write(fullMsg);
