@@ -81,9 +81,9 @@ public class Server1 {
                     String jeton;
                     
                     Server1.log("Thông nhận được :\n" + "start: " + st + "\n" + "jeton: " + je + "\n"
-                            + "lamport: " + lamport + "\n" + "servername: " + name + "\n"
-                            + "type: " + type + "\n" + "action: " + action + "\n" + "vòng đk: " + circle + "\n"
-                            + "thông điệp: " + message + "\n");
+                                + "servername: " + name + "\n"
+                                + "type: " + type + "\n" + "action: " + action + "\n" + "vòng đk: " + circle + "\n"
+                                + "thông điệp: " + message + "\n");
                             
                     int start = Integer.parseInt(st);
                     int act = Integer.parseInt(action);
