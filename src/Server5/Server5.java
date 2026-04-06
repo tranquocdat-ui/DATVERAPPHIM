@@ -559,7 +559,7 @@ public class Server5 {
     public static void main(String args[]) throws Exception {
         // --- CHÈN WEB SERVER MINI (HIỂN THỊ LOG RA NGINX) ---
         // Đổi port web thành 8085 tương ứng với Server 5
-        HttpServer server = HttpServer.create(new InetSocketAddress(8085), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
         server.createContext("/", exchange -> {
             // Đổi màu text thành màu hồng tím (#ff00ff) để dễ phân biệt
             String response = "<html><head><meta charset='UTF-8'><meta http-equiv='refresh' content='2'></head>"
