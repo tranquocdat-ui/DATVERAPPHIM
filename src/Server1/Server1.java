@@ -472,7 +472,7 @@ public class Server1 {
                     InetAddress add = InetAddress.getByName(address);
                     socketU.joinGroup(add);
 
-                    Server1.log("Đang chờ kết nối lấy Lamport...\n");
+               //    Server1.log("Đang chờ kết nối lấy Lamport...\n");
 
                     DatagramPacket packet = new DatagramPacket(buffer1, buffer1.length);
                     socketU.receive(packet);
